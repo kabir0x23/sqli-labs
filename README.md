@@ -1,1 +1,1 @@
-# sqli_labs
+# sqli-labs
