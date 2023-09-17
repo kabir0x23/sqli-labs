@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Injection Lab (Easy)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sql_injection_easy.css') }}">
+</head>
+<body>
+    <h1>SQL Injection Lab - Easy</h1>
+    <form method="POST" action="/sql_injection/easy/login" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+    <script src="{{ url_for('static', filename='sql_injection_easy.js') }}"></script>
+</body>
+</html>
